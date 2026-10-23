@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossos animais</title>
+    <link rel="stylesheet" href="estilos/main.css">
+</head>
+
+<body class="body">
+    <header class="cabecalho">
+         <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Voltar</a>
+            <a class="cabecalho__menu__link" href="about.html">Sobre Nós </a>
+            <a class="cabecalho__menu__link" href="animais.html">Nossos animais</a>
+        </nav>
+    </header>
+
+    <main class="container main">
+        <h1 class="page-title">Nossos </h1>
+        <section class="dashboard">
+            <ul class="dashboard__items">
+                <li class="dashboard__items__item" id="game-1">
+                    <div class="dashboard__item__img">
+                        <img src="" alt="">
+                    </div>
+                    <p class="dashboard__item__name">Monopoly</p>
+                    <a onclick="alterarStatus(1)" href="#" class="dashboard__item__button">Alugar</a>
+                </li>
+                <li class="dashboard__items__item" id="game-2">
+                    <div class="dashboard__item__img">
+                       <img src="" alt="">
+                    </div>
+                    <p class="dashboard__item__name">Ticket to Ride</p>
+                    <a onclick="alterarStatus(2)" href="#" class="dashboard__item__button">Alugar</a>
+                </li>
+                <li class="dashboard__items__item" id="game-3">
+                    <div class="dashboard__item__img dashboard__item__img--rented">
+                        <img src="img/takenoko.png" alt="Capa jogo Takenoko">
+                    </div>
+                    <p class="dashboard__item__name">Takenoko</p>
+                    <a onclick="alterarStatus(3)" href="#" class="dashboard__item__button dashboard__item__button--return">Devolver</a>
+                </li>
+            </ul>
+        </section>
+
+
+        <section class="dashboard">
+            <ul class="dashboard__items">
+                <li class="dashboard__items__item" id="game-1">
+                    <div class="dashboard__item__img">
+                        <img src="img/monopoly.png" alt="Capa jogo Monopoly">
+                    </div>
+                    <p class="dashboard__item__name">Monopoly</p>
+                    <a onclick="alterarStatus(1)" href="#" class="dashboard__item__button">Alugar</a>
+                </li>
+                <li class="dashboard__items__item" id="game-2">
+                    <div class="dashboard__item__img">
+                        <img src="img/ticket_to_ride.png" alt="Capa jogo Ticket to Ride">
+                    </div>
+                    <p class="dashboard__item__name">Ticket to Ride</p>
+                    <a onclick="alterarStatus(2)" href="#" class="dashboard__item__button">Alugar</a>
+                </li>
+                <li class="dashboard__items__item" id="game-3">
+                    <div class="dashboard__item__img dashboard__item__img--rented">
+                        <img src="img/takenoko.png" alt="Capa jogo Takenoko">
+                    </div>
+                    <p class="dashboard__item__name">Takenoko</p>
+                    <a onclick="alterarStatus(3)" href="#" class="dashboard__item__button dashboard__item__button--return">Devolver</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
